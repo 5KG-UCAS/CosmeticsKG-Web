@@ -1,37 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7d719f2-ffcc-489f-ba10-91bba28e5e6e" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
+    <list default="true" id="a7d719f2-ffcc-489f-ba10-91bba28e5e6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/flexslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/honglou.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/404.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/CommingSoon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/blog/item-coment-blog-single1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/blog/item-coment-blog-single2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/bag-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/banner-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/bg-deal-day.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/bg-review.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/cart-home1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/cart-home2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/control-introduce.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/cosmetic-beauty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/introduce.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/introduce1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/introduce2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/introduce3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/introduce4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/introduce5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/patricsia1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/patricsia2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/patricsia3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/search-header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/slide-homepage1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/slider-homepage1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/home/slider-homepage2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/portfolio/Portfolio_Single_Images_item.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-detail/product_detail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-detail/product_detail1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-detail/product_detail2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-detail/product_detail3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-detail/product_detail4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-popular/popular-item1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-popular/popular-item2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product-popular/popular-item3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product/product.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product/product2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product/product3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product/product4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product/product5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product/product6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product/product7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/product/product8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imager/shop/Shop_3Columns-title.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery.flexslider-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webfonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/example1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,53 +97,31 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>nav</find>
-      <find>=true</find>
-    </findStrings>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/example1.html" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CosmeticsKG-Web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CosmeticsKG-Web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CosmeticsKG-Web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CosmeticsKG-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1UnPelps8LfNhobNHin4Ir7AFfj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CosmeticsKG-Web" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -100,12 +135,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.kg.html">
     <configuration name="example1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CosmeticsKG-Web/example1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CosmeticsKG-Web/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="kg.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CosmeticsKG-Web/kg.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.kg.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.example1.html" />
       </list>
     </recent_temporary>
@@ -123,58 +166,28 @@
       <workItem from="1575700915671" duration="868000" />
       <workItem from="1575702111774" duration="4000" />
       <workItem from="1575702120448" duration="1000" />
+      <workItem from="1575989485185" duration="75000" />
+      <workItem from="1576120224446" duration="4929000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="873000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960127" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/interactive-graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="45922" column="68" selection-start-line="45922" selection-start-column="63" selection-end-line="45922" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
