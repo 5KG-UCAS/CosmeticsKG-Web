@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="css/interactive-graph.css">
     <title>Home</title>
 </head>
+<style>
+    html,body{
+        height: 100%;
+    }
+
+</style>
 <body>
 
 <!--header-->
@@ -83,8 +89,8 @@
 <!--end header mobile-->
 <!--end header-->
 
-    <div style="min-height:100vh">
-        <div id="graphArea"></div>
+    <div style="height:100%">
+        <div id="graphArea" style="height: 100%"></div>
     </div><div>
     <!--toolbar-->
     <div class="toolbarPanel igraph-dockable igraph-draggable" igraph-control-role="ToolbarCtrl" igraph-dock-position="B:-6,0">
@@ -118,13 +124,10 @@
 <script src="js/interactive-graph.js"></script>
 <script type="text/javascript">
     igraph.i18n.setLanguage("chs");
-    var app = new igraph.GraphExplorer(document.getElementById('graphArea'));
-    app.loadGson("honglou.json", {}, function () {
-        app.pickup([{
-            label: "贾宝玉"
-        }, {
-            label: "薛蟠"
-        }]);
+    var app = new igraph.GraphExplorer(document.getElementById('graphArea'),'LIGHT');
+    app.connect("http://39.107.244.223:8080/graphserver/connector-bolt", function(){
+        console.log('pickup')
+        app.pickup([{label: '小熊宝宝中性香水'}])
     });
 </script>
 </body>

@@ -94555,7 +94555,7 @@ var app_1 = __webpack_require__(38);
 var GraphExplorer = function (_app_1$BaseApp) {
     (0, _inherits3["default"])(GraphExplorer, _app_1$BaseApp);
 
-    function GraphExplorer(htmlFrame) {
+    function GraphExplorer(htmlFrame, theme) {
         (0, _classCallCheck3["default"])(this, GraphExplorer);
         return (0, _possibleConstructorReturn3["default"])(this, (GraphExplorer.__proto__ || (0, _getPrototypeOf2["default"])(GraphExplorer)).call(this, htmlFrame, {
             showLabels: true,
@@ -94563,7 +94563,7 @@ var GraphExplorer = function (_app_1$BaseApp) {
             showDegrees: true,
             showEdges: true,
             showGroups: true
-        }));
+        }, null, theme));
     }
 
     (0, _createClass3["default"])(GraphExplorer, [{
