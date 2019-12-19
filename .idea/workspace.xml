@@ -2,87 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7d719f2-ffcc-489f-ba10-91bba28e5e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/flexslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/owl.theme.default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/honglou.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/404.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/CommingSoon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/blog/item-coment-blog-single1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/blog/item-coment-blog-single2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/bag-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/banner-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/bg-deal-day.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/bg-review.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/cart-home1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/cart-home2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/control-introduce.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/cosmetic-beauty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/introduce.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/introduce1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/introduce2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/introduce3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/introduce4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/introduce5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/patricsia1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/patricsia2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/patricsia3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/search-header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/slide-homepage1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/slider-homepage1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/home/slider-homepage2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/portfolio/Portfolio_Single_Images_item.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-detail/product_detail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-detail/product_detail1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-detail/product_detail2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-detail/product_detail3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-detail/product_detail4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-lastest/lastest6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-popular/popular-item1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-popular/popular-item2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product-popular/popular-item3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product/product.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product/product2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product/product3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product/product4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product/product5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product/product6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product/product7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/product/product8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imager/shop/Shop_3Columns-title.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.flexslider-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/owl.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-single.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webfonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webfonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webfonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webfonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webfonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webfonts/fontawesome-webfont.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/kgview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qa.html" beforeDir="false" afterPath="$PROJECT_DIR$/qa.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.kg.html">
+  <component name="RunManager" selected="JavaScript Debug.qa.html">
     <configuration name="example1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CosmeticsKG-Web/example1.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -145,8 +70,16 @@
     <configuration name="kg.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CosmeticsKG-Web/kg.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="kgview.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CosmeticsKG-Web/kgview.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="qa.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CosmeticsKG-Web/qa.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.qa.html" />
+        <item itemvalue="JavaScript Debug.kgview.html" />
         <item itemvalue="JavaScript Debug.kg.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.example1.html" />
@@ -167,8 +100,19 @@
       <workItem from="1575702111774" duration="4000" />
       <workItem from="1575702120448" duration="1000" />
       <workItem from="1575989485185" duration="75000" />
-      <workItem from="1576120224446" duration="4929000" />
+      <workItem from="1576120224446" duration="7046000" />
+      <workItem from="1576679600733" duration="3644000" />
+      <workItem from="1576685560619" duration="2000" />
+      <workItem from="1576733555466" duration="5721000" />
     </task>
+    <task id="LOCAL-00001" summary="12/12">
+      <created>1576139520081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576139520081</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,5 +133,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="12/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="12/12" />
   </component>
 </project>

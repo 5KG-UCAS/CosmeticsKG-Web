@@ -1,28 +1,61 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="stylesheet" href="./css/owl.carousel.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.css">
+
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="style.css?ver=1">
     <link rel="stylesheet" type="text/css" href="./css/flexslider.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link href="./css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=El+Messiri:400,500,600,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i"
-          rel="stylesheet">
-    <title>Home</title>
+    <link rel="stylesheet" href="css/interactive-graph.css">
+    <title>Product list</title>
 </head>
+<style>
+    .my-search{
+        width: 100%;
+        margin-top: 30px;
+        font-size: larger;
+        border: none;
+        border-bottom: 2px solid #faa7a3;
+        color: #888;
+        text-indent: 5px;
+        background: rgba(0,0,0,0);
+    }
+    .my-search:focus{
+        outline: none;
+    }
+    .btn{
+        cursor: pointer;
+        padding: 2px 4px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 1.5rem;
+        color: #faa7a3;
+    }
+    .btn:hover{
+        color: #fff;
+        background-color: #faa7a3;
+    }
+    pre {outline: 1px solid #ccc; }
+    .string { color: green; }
+    .number { color: darkorange; }
+    .boolean { color: blue; }
+    .null { color: magenta; }
+    .key { color: red; }
+</style>
 <body>
-
 <!--header-->
 <!--header desktop-->
 <div class="header">
     <div class="container-fluid search-header">
         <form>
-            <input type="text" placeholder="Search">
+            <input type="text" placeholder="Search cosmetic here">
             <span class="close-search">X</span>
         </form>
     </div>
@@ -37,9 +70,9 @@
                 <div>
                     <div class="menu">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="product-list.html">Product List</a></li>
-                            <li><a href="product-single.html">Product Single</a></li>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="kgview.html">Knowledge Graph</a></li>
+                            <li><a href="#">Question Answering</a></li>
                         </ul>
                     </div>
                 </div>
@@ -76,9 +109,9 @@
 
         <div class="menu-mobile">
             <ul>
-                <li><a href="index.html">Home</a></li>
-				<li><a href="product-list.html">Product List</a></li>
-				<li><a href="product-single.html">Product Single</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="kgview.html">Knowledge Graph</a></li>
+                <li><a href="#">Question Answering</a></li>
             </ul>
         </div>
     </div>
@@ -86,1126 +119,118 @@
 <!--end header mobile-->
 <!--end header-->
 
-<div class="content-homepage">
-    <!-- slide-homepage-1-->
-    <div class="slider-homepage1">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="slide-homepage" style="background-image: url('imager/home/slide-homepage1.jpg')">
-                        <div class="container">
-                            <div class="row">
-                                <div class=" col-md-6 col-sm-8 col-8 content-slide">
-                                    <h2>Spray <br/>Moisturizing</h2>
-                                    <p>GENTLE FOR WINTER</p>
-                                    <a href="product-list.html">shop now</a>
-                                </div>
-                            </div>
-                        </div>
+<!--title detail-->
+<div class="title-page"
+     style="background-image: url('imager/home/bg-review.jpg');background-position: center center;background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-6 inner-title-page" style="padding: 70px 0;margin: auto">
+                <h2>Question Answering</h2>
+                <div style="position:relative;">
+                <input type="text" class="igraph-searchbox my-search" placeholder="Input your question here" style="display: block" id="question">
+                    <div class="btn click-quick-view" data-toggle="modal" style="" id="search">
+                        <span class="lnr lnr-magnifier"></span>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="slide-homepage" style="background-image: url('imager/home/slider-homepage2.jpg')">
-                        <div class="container">
-                            <div class="row">
-                                <div class=" col-md-9 col-sm-10 col-10 content-slide">
-                                    <h2>Skin <br/> lightening cream</h2>
-                                    <p>GENTLE FOR WINTER</p>
-                                    <a href="product-list.html">shop now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="slide-homepage" style="background-image: url('imager/home/slider-homepage1.jpg')">
-                        <div class="container">
-                            <div class="row">
-                                <div class=" col-md-6 col-sm-9 col-9 content-slide">
-                                    <h2>Skin <br/> Anti-aging</h2>
-                                    <p>GENTLE FOR WINTER</p>
-                                    <a href="product-list.html">shop now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
-        <div class="control-slider-homepage1">
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon">  <span class="lnr lnr-chevron-left"></span>  </span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon"> <span class="lnr lnr-chevron-right"></span> </span>
-            </a>
-        </div>
     </div>
-    <!--end slide-homepage-1-->
-
-    <!--end deal of the day-->
-    <!--Product out-->
-<!--    <div class="container">-->
-<!--        <div class="product-out">-->
-<!--            <div class="title">-->
-<!--                <h2 class="text-center">Product Our</h2>-->
-<!--            </div>-->
-<!--            <div id="demo" class="carousel slide" data-ride="carousel">-->
-<!--                &lt;!&ndash; Indicators &ndash;&gt;-->
-<!--                <ul class="carousel-indicators">-->
-<!--                    <li data-target="#demo" data-slide-to="0" class="active"></li>-->
-<!--                    <li data-target="#demo" data-slide-to="1"></li>-->
-<!--                    <li data-target="#demo" data-slide-to="2"></li>-->
-<!--                </ul>-->
-<!--                &lt;!&ndash; The slideshow &ndash;&gt;-->
-<!--                <div class="carousel-inner">-->
-<!--                    <div class="carousel-item active">-->
-<!--                        <div class="row product">-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Cleanser layde</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>79-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product2.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onsale">Sale</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Spa</a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Night cream</a></p>-->
-
-<!--                                        <span class="price">-->
-<!--												<del>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>45-->
-
-<!--													</span>-->
-<!--												</del>-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>38-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product3.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Make up</a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Cleanser layde</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>56-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product4.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Moisturizing cream</a></p>-->
-<!--                                        <span class="price">-->
-
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>87-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product5.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onsale">Sale</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Make up </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Perfect Spice</a></p>-->
-
-<!--                                        <span class="price">-->
-<!--												<del>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>51-->
-
-<!--													</span>-->
-<!--												</del>-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>41-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product6.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Silky smooth skin</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>93-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product7.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Spa</a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Whitening cream</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>45-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product8.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-single.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Water flower</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>62-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="carousel-item">-->
-<!--                        <div class="row product">-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Cleanser layde</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>79-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product2.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onsale">Sale</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Spa</a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Night cream</a></p>-->
-
-<!--                                        <span class="price">-->
-<!--												<del>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>45-->
-
-<!--													</span>-->
-<!--												</del>-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>38-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product3.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Make up</a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Cleanser layde</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>56-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product4.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Moisturizing cream</a></p>-->
-<!--                                        <span class="price">-->
-
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>87-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product5.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onsale">Sale</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Make up </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Perfect Spice</a></p>-->
-
-<!--                                        <span class="price">-->
-<!--												<del>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>51-->
-
-<!--													</span>-->
-<!--												</del>-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>41-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product6.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Silky smooth skin</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>93-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product7.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Spa</a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Whitening cream</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>45-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product8.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-single.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Water flower</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>62-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="carousel-item">-->
-<!--                        <div class="row product">-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Cleanser layde</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>79-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product2.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onsale">Sale</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Spa</a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Night cream</a></p>-->
-
-<!--                                        <span class="price">-->
-<!--												<del>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>45-->
-
-<!--													</span>-->
-<!--												</del>-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>38-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product3.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Make up</a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Cleanser layde</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>56-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product4.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Moisturizing cream</a></p>-->
-<!--                                        <span class="price">-->
-
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>87-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product5.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onsale">Sale</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Make up </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Perfect Spice</a></p>-->
-
-<!--                                        <span class="price">-->
-<!--												<del>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>51-->
-
-<!--													</span>-->
-<!--												</del>-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>41-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product6.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Silky smooth skin</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>93-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product7.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-list.html">Spa</a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Whitening cream</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>45-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-img-top">-->
-<!--                                        <a href="product-single.html" class="wp-post-image">-->
-<!--                                            <img class="image-cover" src="imager/product/product8.jpg" alt="product">-->
-<!--                                        </a>-->
-<!--                                        <p class="onnew">New</p>-->
-<!--                                        <div class="icon-product">-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-lock"></span>-->
-<!--                                            </button>-->
-<!--                                            <button type="button" class="btn click-quick-view" data-toggle="modal"-->
-<!--                                                    data-target="#exampleModalCenter">-->
-<!--                                                <span class="lnr lnr-magnifier"></span>-->
-<!--                                            </button>-->
-<!--                                            <button class="btn">-->
-<!--                                                <span class="lnr lnr-heart"></span>-->
-<!--                                            </button>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="card-body">-->
-<!--                                        <p class="card-title"><a href="product-single.html">Beauty </a></p>-->
-<!--                                        <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
-<!--                                            Water flower</a></p>-->
-<!--                                        <span class="price">-->
-<!--												<ins>-->
-<!--													<span class="woocommerce-Price-amount amount">-->
-<!--														<span class="woocommerce-Price-currencySymbol">$</span>62-->
-<!--													</span>-->
-<!--												</ins>-->
-<!--                                    </span>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">-->
-<!--                    <div class="modal-dialog modal-dialog-centered" role="document">-->
-<!--                        <div class="modal-content container">-->
-<!--                            <div class="product-single-quick-view">-->
-<!--                                <div class="row product_detail">-->
-<!--                                    <div class="col-md-6 col-sm-12 col-12">-->
-<!--                                        <div class="flex-quick-view">-->
-<!--                                            <div id="flex-slider" class="flexslider">-->
-<!--                                                <ul class="slides">-->
-<!--                                                    <li>-->
-<!--                                                        <img src="imager/product-detail/product_detail.jpg" alt="">-->
-<!--                                                    </li>-->
-<!--                                                    <li>-->
-<!--                                                        <img src="imager/product-detail/product_detail.jpg" alt="">-->
-<!--                                                    </li>-->
-<!--                                                    <li>-->
-<!--                                                        <img src="imager/product-detail/product_detail.jpg" alt="">-->
-<!--                                                    </li>-->
-<!--                                                    <li>-->
-<!--                                                        <img src="imager/product-detail/product_detail.jpg" alt="">-->
-<!--                                                    </li>-->
-<!--                                                    &lt;!&ndash; items mirrored twice, total of 12 &ndash;&gt;-->
-<!--                                                </ul>-->
-<!--                                            </div>-->
-<!--                                            <div id="flex-carousel" class="flexslider">-->
-<!--                                                <ul class="slides">-->
-<!--                                                    <li>-->
-<!--                                                        <img src="imager/product-detail/product_detail1.jpg" alt="">-->
-<!--                                                    </li>-->
-<!--                                                    <li>-->
-<!--                                                        <img src="imager/product-detail/product_detail2.jpg" alt="">-->
-<!--                                                    </li>-->
-<!--                                                    <li>-->
-<!--                                                        <img src="imager/product-detail/product_detail3.jpg" alt="">-->
-<!--                                                    </li>-->
-<!--                                                    <li>-->
-<!--                                                        <img src="imager/product-detail/product_detail4.jpg" alt="">-->
-<!--                                                    </li>-->
-<!--                                                    &lt;!&ndash; items mirrored twice, total of 12 &ndash;&gt;-->
-<!--                                                </ul>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div class="col-md-6 col-sm-12 col-12 content-product">-->
-<!--                                        <h2>Whitening cream | $65</h2>-->
-<!--                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i-->
-<!--                                                class="fas fa-star"></i><i class="fas fa-star"></i> &nbsp; (2 customer-->
-<!--                                            review)</p>-->
-<!--                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,-->
-<!--                                            when an-->
-<!--                                            unknown printer took a galley of type and scrambled it to make a type specimen-->
-<!--                                            book.-->
-<!--                                            It has survived not only five centuries, but also the leap into electronic </p>-->
-<!--                                        <div class="infor-product">-->
-<!--                                            <p><span>Sku: </span>22</p>-->
-<!--                                            <p><span>Category: </span>Cosmetic</p>-->
-<!--                                            <p><span>Tag: </span>Trendy</p>-->
-<!--                                            <p><span>Share: </span>-->
-<!--                                                <a href=""><i class="fab fa-facebook"></i></a>-->
-<!--                                                <a href=""><i class="fab fa-linkedin-in"></i></a>-->
-<!--                                                <a href=""><i class="fab fa-instagram"></i></a></p>-->
-<!--                                        </div>-->
-<!--                                        <div>-->
-<!--                                            <div class="btn-group">-->
-<!--                                                <button type="button" class="prev btn ">-</button>-->
-<!--                                                <button type="button" class="show-number btn ">1</button>-->
-<!--                                                <button type="button" class="next btn ">+</button>-->
-<!--                                            </div>-->
-<!--                                            <div class="btn-group">-->
-<!--                                                <a href="#" class="btn add-to-cart">ADD TO CART<p><i-->
-<!--                                                        class="fas fa-cart-plus"></i></p> </a>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <span class="lnr lnr-cross close-quick-view" data-dismiss="modal"></span>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-    <!--end Product out-->
-    <!-- code review home-->
-<!--    <div class="container-fluid">-->
-<!--        <div class="row review-homepage" style=" background-image: url('imager/home/bg-review.jpg');-->
-<!--        background-size: cover;-->
-<!--        background-position: center center;-->
-<!--        background-repeat: no-repeat;-->
-<!--        ">-->
-<!--            <div class="container">-->
-<!--                <div class="row ">-->
-<!--                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">-->
-<!--                        <ol class="carousel-indicators">-->
-<!--                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
-<!--                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
-<!--                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
-<!--                        </ol>-->
-<!--                        <div class="carousel-inner">-->
-<!--                            <div class="carousel-item active">-->
-<!--                                <div class="content-review-homepage">-->
-<!--                                        <img src="imager/home/patricsia1.jpg" alt="">-->
-<!--                                    <h3 class="text-center">Patricsia Petersen</h3>-->
-<!--                                    <p class="text-center"><i class="fas fa-star"></i><i class="fas fa-star"></i><i-->
-<!--                                            class="fas fa-star"></i><i-->
-<!--                                            class="fas fa-star"></i><i class="fas fa-star"></i>-->
-<!--                                    </p>-->
-<!--                                    <p style="padding-bottom: 100px;">-->
-<!--                                        There are many variations of passages of Lorem Ipsum available, but the majority-->
-<!--                                        have-->
-<!--                                        suffered alteration-->
-<!--                                        in some form, by injected humour, or randomised words which don't look even-->
-<!--                                        slightly-->
-<!--                                        believable. If you are-->
-<!--                                        going to use a passage of Lorem Ipsum, you need to be sure there isn't anything-->
-<!--                                        embarrassing hidden in the middle of text.-->
-<!--                                    </p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="carousel-item">-->
-<!--                                <div class="content-review-homepage">-->
-<!--                                    <img src="imager/home/patricsia2.jpg" alt="">-->
-<!--                                    <h3 class="text-center">Patricsia Petersen</h3>-->
-<!--                                    <p class="text-center"><i class="fas fa-star"></i><i class="fas fa-star"></i><i-->
-<!--                                            class="fas fa-star"></i><i-->
-<!--                                            class="fas fa-star"></i><i class="fas fa-star"></i>-->
-<!--                                    </p>-->
-<!--                                    <p style="padding-bottom: 100px;">-->
-<!--                                        There are many variations of passages of Lorem Ipsum available, but the majority-->
-<!--                                        have-->
-<!--                                        suffered alteration-->
-<!--                                        in some form, by injected humour, or randomised words which don't look even-->
-<!--                                        slightly-->
-<!--                                        believable. If you are-->
-<!--                                        going to use a passage of Lorem Ipsum, you need to be sure there isn't anything-->
-<!--                                        embarrassing hidden in the middle of text.-->
-<!--                                    </p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="carousel-item">-->
-<!--                                <div class="content-review-homepage">-->
-<!--                                    <img src="imager/home/patricsia3.jpg" alt="">-->
-<!--                                    <h3 class="text-center">Patricsia Petersen</h3>-->
-<!--                                    <p class="text-center"><i class="fas fa-star"></i><i class="fas fa-star"></i><i-->
-<!--                                            class="fas fa-star"></i><i-->
-<!--                                            class="fas fa-star"></i><i class="fas fa-star"></i>-->
-<!--                                    </p>-->
-<!--                                    <p style="padding-bottom: 100px;">-->
-<!--                                        There are many variations of passages of Lorem Ipsum available, but the majority-->
-<!--                                        have-->
-<!--                                        suffered alteration-->
-<!--                                        in some form, by injected humour, or randomised words which don't look even-->
-<!--                                        slightly-->
-<!--                                        believable. If you are-->
-<!--                                        going to use a passage of Lorem Ipsum, you need to be sure there isn't anything-->
-<!--                                        embarrassing hidden in the middle of text.-->
-<!--                                    </p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                    </div>-->
-
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-    <!--end code review home-->
-    <!--code product latest new-->
-
 </div>
+<!--end title detail-->
+<!--product list-->
+<div class="container">
+    <pre id="jsonShow"></pre>
+<!--    <div class="prodcut-list">-->
+<!--        <div class="row">-->
+<!--            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">-->
+<!--                <div class="row header-show-list">-->
+<!--                    <div class="col-md-6 col-sm-12 col-12">-->
+<!--                        <p>Showing 1–12 of 24 results</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row product">-->
+<!--                    <div class="col-md-4 col-sm-6 col-12">-->
+<!--                        <div class="card">-->
+<!--                            <div class="card-img-top">-->
+<!--                                <a href="product-single.html" class="wp-post-image">-->
+<!--                                    <img class="image-cover" src="imager/product/product3.jpg" alt="product">-->
+<!--                                </a>-->
+<!--                                <div class="icon-product">-->
+<!--                                    <button type="button" class="btn click-quick-view" data-toggle="modal"-->
+<!--                                            data-target="#exampleModalCenter">-->
+<!--                                        <span class="lnr lnr-magnifier"></span>-->
+<!--                                    </button>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="card-body">-->
+<!--                                <p class="card-title"><a href="product-list.html">Make up</a></p>-->
+<!--                                <p class="woocommerce-loop-product__title"><a href="product-single.html">-->
+<!--                                    Cleanser layde</a></p>-->
+<!--                                <span class="price">-->
+<!--												<ins>-->
+<!--													<span class="woocommerce-Price-amount amount">-->
+<!--														<span class="woocommerce-Price-currencySymbol">$</span>56-->
+<!--													</span>-->
+<!--												</ins>-->
+<!--                                    </span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <ul class="pagination justify-content-center">-->
+<!--                        <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#"> > </a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                </div>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+<!--end product list-->
+
 <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="./js/owl.carousel.js"></script>
 <script type="text/javascript" src="./js/custom.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/interactive-graph.js"></script>
+<script>
+    function jsonShowFn(json){
+        if (!json.match("^\{(.+:.+,*){1,}\}$")) {
+            return json           //判断是否是json数据，不是直接返回
+        }
+
+        if (typeof json != 'string') {
+            json = JSON.stringify(json, undefined, 2);
+        }
+        json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function(match) {
+            var cls = 'number';
+            if (/^"/.test(match)) {
+                if (/:$/.test(match)) {
+                    cls = 'key';
+                } else {
+                    cls = 'string';
+                }
+            } else if (/true|false/.test(match)) {
+                cls = 'boolean';
+            } else if (/null/.test(match)) {
+                cls = 'null';
+            }
+            return '<span class="' + cls + '">' + match + '</span>';
+        });
+    }
+    $("#search").on('click',()=>{
+        var question  = $('#question').val()
+        if (question.length>0){
+            $.post('/CosmeticsKG/question?question='+question,(rsp)=>{
+                console.log(rsp)
+                $('#jsonShow').html(jsonShowFn(rsp))
+            })
+        }
+    })
+</script>
 </body>
 </html>

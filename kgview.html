@@ -17,7 +17,7 @@
 
     }
     .my-search{
-        width: 95%;
+        width: 100%;
         margin-top: 30px;
         font-size: larger;
         border: none;
@@ -28,6 +28,18 @@
     }
     .my-search:focus{
         outline: none;
+    }
+    .btn{
+        padding: 2px 4px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 1.5rem;
+        color: #faa7a3;
+    }
+    .btn:hover{
+        color: #fff;
+        background-color: #faa7a3;
     }
 </style>
 <body>
@@ -53,9 +65,9 @@
                 <div>
                     <div class="menu">
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="index.html">HOME</a></li>
                             <li><a href="#">Knowledge Graph</a></li>
-                            <li><a href="#">Question Answering</a></li>
+                            <li><a href="qa.html">Question Answering</a></li>
                         </ul>
                     </div>
                 </div>
@@ -92,9 +104,9 @@
 
         <div class="menu-mobile">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="#">Knowledge Graph</a></li>
-                <li><a href="#">Question Answering</a></li>
+                <li><a href="qa.html">Question Answering</a></li>
             </ul>
         </div>
     </div>
@@ -110,8 +122,12 @@
         <div class="row">
             <div class=" col-md-6 inner-title-page" style="padding: 70px 0;" igraph-control-role="SearchBoxCtrl">
                 <h2>Cosmetics Search</h2>
-                <input type="text" class="igraph-searchbox my-search" placeholder="Search cosmetic here" style="display: block">
-
+                <div style="position:relative;">
+                    <input type="text" class="igraph-searchbox my-search" placeholder="Search cosmetic here" style="display: block">
+                    <div class="btn click-quick-view" data-toggle="modal" style="">
+                        <span class="lnr lnr-magnifier"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -129,23 +145,6 @@
                 <div class="toolbarPanel igraph-dockable igraph-draggable" style="display: none;" igraph-control-role="ToolbarCtrl" igraph-dock-position="B:-6,0">
                     <div class="toolbar"></div>
                 </div>
-                <!--info box-->
-<!--                <div class="infoPanel igraph-dockable igraph-draggable"  igraph-dock-position="A:10,80">-->
-<!--                    <div>-->
-<!--                        <div class="infoPanel1"></div>-->
-<!--                        <div class="infoPanel2"><span align="center" class="fa fa-close fa-lg btnCloseInfoPanel"></span></div>-->
-<!--                    </div>-->
-<!--                    <div class="infoBox"></div>-->
-<!--                </div>-->
-                <!--search box-->
-<!--                <div class="searchPanel igraph-dockable igraph-draggable" igraph-control-role="SearchBoxCtrl" igraph-dock-position="A:10,20">-->
-<!--                    <div class="searchPanel1">-->
-<!--                        <input class="igraph-searchbox" type="text" size="16" placeholder="input keyword">-->
-<!--                    </div>-->
-<!--                    <div class="searchPanel2">-->
-<!--                        <span align="center" class="fa fa-search fa-lg"/>-->
-<!--                    </div>-->
-<!--                </div>-->
             </div>
             <div class="col-md-4 col-sm-12 col-12 content-product" style="display: block" igraph-control-role="InfoBoxCtrl">
                 <div class="infoPanel2">
@@ -187,7 +186,7 @@
                 fontColor: "#FFFFFF"
             },
             nodes: {
-                borderWidth: 0,
+                borderWidth: 2,
                 shape: 'dot',
                 scaling: {
                     min: 10,
@@ -199,15 +198,15 @@
                 }
             },
             edges: {
-                width: 0.02,
+                width: 0.1,
                 font: {
                     size: 0,
-                    color: '#cccccc',
+                    color: '#777',
                 },
                 color: {
                     inherit: 'to',
-                    opacity: 0.9,
-                    color: '#cccccc',
+                    opacity: 1,
+                    color: '#555',
                     highlight: '#faa7a3',
                     hover: '#faa7a3',
                 },
@@ -247,9 +246,8 @@
     }
     var app = new igraph.GraphExplorer(document.getElementById('graphArea'),theme);
     app.toggleNavigationButtons(false);
-    app.toggleNodeBorder(true);
     app.toggleShowEdgeLabelAlways(true);
-    app.connect("http://39.107.244.223:8080/graphserver/connector-bolt", function(){
+    app.connect("/graphserver/connector-bolt", function(){
         app.pickup([{label: '磨砂唇膏316'}]);
         app.getGraphService().requestGetNodeInfos([2634],
         function (nodeInfos) {
